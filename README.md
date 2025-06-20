@@ -41,7 +41,7 @@ Alternatively, you may submit the code in the form of a zip file and send it to 
 
 ## Questions or Concerns
 
-If you have any questions at all, feel free to reach out to [dcarden@swingleft.org](mailto:dcarden@swingleft.org)
+If you have any questions at all, feel free to reach out to [dcarden@swingleft.org](mailto:dcarden@swingleft.org).
 
 ## Running The Code
 
