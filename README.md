@@ -23,6 +23,9 @@ To run Jest tests, use:
 - If I had more time I would have removed the duplicate database credentials and connection string which are in `db/sequelize.ts` and in `scripts/`. The same is true for `VoterRegistrationDeadline` which is in `models/` and in `scripts/create-db.js`.
 - I had to jump through more hoops than I expected to in order to get Jest to work, so there are some config files and changes in `__tests__/` for that purpose.
 
+> [!NOTE]
+> The original README is below.
+
 # SL/VF Technical Take Home
 
 > Build a state voter registration search tool
