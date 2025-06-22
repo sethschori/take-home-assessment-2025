@@ -1,3 +1,28 @@
+# Seth Schori's notes
+
+I completed the assessment and here is a screenshot of what the app looks like when it's running:
+
+![screenshot](./docs/app_screenshot.png)
+
+To run the app, use the same steps as shown in [Running the code](#running-the-code):
+
+1. pull down the repo and `cd` into it
+2. `npm install --no-save`
+3. `npm run db:create-db`
+4. `npm run dev`
+
+To run Jest tests, use:
+
+1. `npm test`
+
+### Implementation notes
+
+- My work can be found in [PR #2](https://github.com/sethschori/take-home-assessment-2025/pull/2) on the `seth-work` branch.
+- I used Sequelize as the ORM and Next.js on the backend.
+- The table is responsive for smaller screens, however the page must be refreshed for the responsiveness to work. If I had more time I would have implemented listeners so that the table would change dynamically when the window is resized.
+- If I had more time I would have removed the duplicate database credentials and connection string which are in `db/sequelize.ts` and in `scripts/`. The same is true for `VoterRegistrationDeadline` which is in `models/` and in `scripts/create-db.js`.
+- I had to jump through more hoops than I expected to in order to get Jest to work, so there are some config files and changes in `__tests__/` for that purpose.
+
 # SL/VF Technical Take Home
 
 > Build a state voter registration search tool
