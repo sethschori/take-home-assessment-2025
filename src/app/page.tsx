@@ -1,13 +1,18 @@
-const LOCAL_API = 'http://localhost:3000/api/sample_api'
+import { DEADLINES_API } from "./constants";
+import { getApi } from "./utilities";
+import VoterDeadlines from "./components/VoterDeadlines";
 
-export default async function Page() {
-  const response = await fetch(LOCAL_API);
-  const data = await response.text();
-
+async function Page() {
   return (
     <main>
-      <h1>HELLO</h1>
-      <h1>{data}</h1>
+      <h1>
+        Voter Registration Deadlines
+      </h1>
+      <VoterDeadlines
+        deadlines={await getApi(DEADLINES_API)}
+      />
     </main>
   );
 }
+
+export default Page;
